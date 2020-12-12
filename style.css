@@ -1,0 +1,157 @@
+.button_nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+  :root {
+    --transition_time: 600ms;
+    --color_validation:  rgb(153, 209, 202);
+    --transition_time_return: 1200ms;
+    --transition_delay_return: 00ms;
+  }
+  
+  .container {
+    background-color: rgb(235, 235, 235);
+    width: calc(100% - 0px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container > :nth-child(1) {
+    animation: box 1s 200ms both; 
+  }
+  .container > :nth-child(2) {
+    animation: box 1s 400ms both; 
+  }
+  .container > :nth-child(3) {
+    animation: box 1s 600ms both; 
+  }
+  .container > :nth-child(4) {  
+    animation: box 1s 800ms both; 
+  }
+  .container > :nth-child(5) {
+    animation: box 1s 1000ms both; 
+  }
+  .container > :nth-child(6) {
+    animation: box 1s 1200ms both; 
+  }
+  .container > :nth-child(7) {
+    animation: box 1s 1400ms both; 
+  }
+  .container > :nth-child(8) {  
+    animation: box 1s 1600ms both; 
+  }
+  .container > :nth-child(9) {
+    animation: box 1s 1800ms both; 
+  }
+  .container > :nth-child(10) {
+    animation: box 1s 2000ms both; 
+  }
+  .container > :nth-child(11) {
+    animation: box 1s 2200ms both; 
+  }
+  .container > :nth-child(12) {  
+    animation: box 1s 2400ms both; 
+  }
+  .container > :nth-child(13) {  
+    animation: box 1s 2600ms both; 
+  }
+  .container > :nth-child(14) {  
+    animation: box 1s 2800ms both; 
+  }
+  
+  @keyframes box {
+    0% {
+      opacity: 0;
+      transform: translateY(200px);
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }  
+  
+
+  .choix_box {
+    width: calc(100% - 20px);
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10px 10px;
+  }
+  .choix_txt {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);  
+    transition: width var(--transition_time_return) var(--transition_delay_return);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .choix_validation {
+    width: 15%;
+    height: 100%;
+    background-color: var(--color_validation);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ellipsis {
+    display: block;
+    overflow : hidden;
+    white-space : nowrap;
+    text-overflow : ellipsis;
+  }
+  .baseline {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .fa-check-circle {
+    transition: transform var(--transition_time_return) var(--transition_delay_return);
+    color: white;
+  }
+  .price {
+    margin-left: 20px;
+  }
+  .choix_box:hover .choix_txt{
+    width: calc(85% - 20px);
+    transition: width var(--transition_time);
+  }
+  .choix_box:hover .choix_validation{
+    width: 15%;
+    transition: width var(--transition_time);
+  }
+  .choix_box:hover .fa-check-circle{
+    transform: rotate(1turn);
+    transition: transform var(--transition_time);
+  }
+
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  h1, h2 {
+    padding: 0px 0;
+    margin: 0;
+  }h1 {
+  font-size: calc(18px + 0.8vw);  
+}
+h2 {
+  font-size: calc(14px + 0.6vw);  
+}
