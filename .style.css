@@ -1,0 +1,18 @@
+/* Error: Expected identifier.
+ *    ,
+ * 21 |   @each $
+ *    |          ^
+ *    '
+ *   sass\4-components\_anim_ouverture.scss 21:10  @import
+ *   sass\main.scss 3:9                            root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a    \2577 \a 21 \2502    @each $\d\a    \2502           ^\a    \2575 \a   sass\\4-components\\_anim_ouverture.scss 21:10  @import\a   sass\\main.scss 3:9                            root stylesheet";
+}
