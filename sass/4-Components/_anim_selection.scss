@@ -1,12 +1,75 @@
-.test {
-    font-size: 2px;
-    
-    &__2 {
-        border: 2px red none;
-  }
+.choix_box {
+  width: calc(100% - 20px);
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: white;
+  margin: 10px 10px;
+}
+.choix_txt {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);  
+  transition: width var(--transition_time_return) var(--transition_delay_return);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px;
+}
+.choix_validation {
+  width: 15%;
+  height: 100%;
+  background-color: var(--color_validation);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ellipsis {
+  display: block;
+  overflow : hidden;
+  white-space : nowrap;
+  text-overflow : ellipsis;
+}
+.baseline {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.fa-check-circle {
+  transition: transform var(--transition_time_return) var(--transition_delay_return);
+  color: white;
+}
+.price {
+  margin-left: 20px;
+}
+.choix_box:hover .choix_txt{
+  width: calc(85% - 20px);
+  transition: width var(--transition_time);
+}
+.choix_box:hover .choix_validation{
+  width: 15%;
+  transition: width var(--transition_time);
+}
+.choix_box:hover .fa-check-circle{
+  transform: rotate(1turn);
+  transition: transform var(--transition_time);
+}
 
 
-
-
-  
+body {
+  margin: 0;
+  padding: 0;
+}
+h1, h2 {
+  padding: 0px 0;
+  margin: 0;
+}h1 {
+font-size: calc(18px + 0.8vw);  
+}
+h2 {
+font-size: calc(14px + 0.6vw);  
 }

@@ -1,46 +1,72 @@
 :root {
-    --transition_time: 600ms;
-    --color_validation: olive;
-    --transition_time_return: 1200ms;
-    --transition_delay_return: 00ms;
-  }
-  
-  .container {
-    background-color: black;
-    width: 90%;
-    height: 700px;
-  }
-  .container_ensemble{
-    background-color: grey;
-    width: 90%;
-    height: 100px;
-    border: 2px white solid;
-    margin: auto;
-  }
+  --transition_time: 600ms;
+  --color_validation:  rgb(153, 209, 202);
+  --transition_time_return: 1200ms;
+  --transition_delay_return: 00ms;
+}
 
-  .container_ensemble:nth-child(1) {
-    animation: box 1s 200ms both;
+.container {
+  background-color: rgb(235, 235, 235);
+  width: calc(100% - 0px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container > :nth-child(1) {
+  animation: box 1s 200ms both; 
+}
+.container > :nth-child(2) {
+  animation: box 1s 400ms both; 
+}
+.container > :nth-child(3) {
+  animation: box 1s 600ms both; 
+}
+.container > :nth-child(4) {  
+  animation: box 1s 800ms both; 
+}
+.container > :nth-child(5) {
+  animation: box 1s 1000ms both; 
+}
+.container > :nth-child(6) {
+  animation: box 1s 1200ms both; 
+}
+.container > :nth-child(7) {
+  animation: box 1s 1400ms both; 
+}
+.container > :nth-child(8) {  
+  animation: box 1s 1600ms both; 
+}
+.container > :nth-child(9) {
+  animation: box 1s 1800ms both; 
+}
+.container > :nth-child(10) {
+  animation: box 1s 2000ms both; 
+}
+.container > :nth-child(11) {
+  animation: box 1s 2200ms both; 
+}
+.container > :nth-child(12) {  
+  animation: box 1s 2400ms both; 
+}
+.container > :nth-child(13) {  
+  animation: box 1s 2600ms both; 
+}
+.container > :nth-child(14) {  
+  animation: box 1s 2800ms both; 
+}
+
+@keyframes box {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
   }
-  .container_ensemble:nth-child(2) {
-    animation: box 1s 400ms both; 
+  50% {
+    opacity: 0.7;
   }
-  .container_ensemble:nth-child(3) {
-    animation: box 1s 600ms both; 
+  100% {
+    opacity: 1;
   }
-  .container_ensemble:nth-child(4) {  
-    animation: box 1s 800ms both; 
-  }
-  
-  @keyframes box {
-    0% {
-      opacity: 0;
-      transform: translateY(200px);
-    }
-    50% {
-      opacity: 0.7;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+}  
   
