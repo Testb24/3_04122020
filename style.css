@@ -1,18 +1,61 @@
-/* Error: Expected identifier.
- *    ,
- * 21 |   @each $
- *    |          ^
- *    '
- *   sass\4-components\_anim_ouverture.scss 21:10  @import
- *   sass\main.scss 3:9                            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a    \2577 \a 21 \2502    @each $\d\a    \2502           ^\a    \2575 \a   sass\\4-components\\_anim_ouverture.scss 21:10  @import\a   sass\\main.scss 3:9                            root stylesheet";
+.test {
+  font-size: 2px;
 }
+
+:root {
+  --transition_time: 600ms;
+  --color_validation: olive;
+  --transition_time_return: 1200ms;
+  --transition_delay_return: 00ms;
+}
+
+.container {
+  background-color: black;
+  width: 90%;
+  height: 700px;
+}
+
+.container_ensemble {
+  background-color: grey;
+  width: 90%;
+  height: 100px;
+  border: 2px white solid;
+  margin: auto;
+}
+
+.container_ensemble:nth-child(1) {
+  animation: box 1s 200ms both;
+}
+
+.container_ensemble:nth-child(2) {
+  animation: box 1s 400ms both;
+}
+
+.container_ensemble:nth-child(3) {
+  animation: box 1s 600ms both;
+}
+
+.container_ensemble:nth-child(4) {
+  animation: box 1s 800ms both;
+}
+
+@keyframes box {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.test {
+  font-size: 2px;
+}
+.test__2 {
+  border: 2px red none;
+}
+
+/*# sourceMappingURL=style.css.map */
