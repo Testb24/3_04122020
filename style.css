@@ -1,7 +1,8 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #ebebeb;
+  background-color: #f6f6f6;
+  font-family: arial;
 }
 
 :root {
@@ -18,7 +19,7 @@ body {
 
 .container_main {
   background-color: #ebebeb;
-  width: calc(100% - 20px);
+  width: calc(100% - 30px);
   height: auto;
   display: flex;
   flex-direction: column;
@@ -26,9 +27,15 @@ body {
   align-items: baseline;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  padding: 20px 10px 0px 10px;
+  padding: 20px 15px 0px 15px;
   position: relative;
   top: -40px;
+}
+.container_main .titre {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .container_main h3 {
   position: relative;
@@ -46,7 +53,7 @@ body {
 .container_footer {
   width: calc(100% - 40px);
   height: auto;
-  background-color: #363636;
+  background-color: #353535;
   color: white;
   padding: 20px;
 }
@@ -325,11 +332,11 @@ h2 {
   color: white;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(175deg, #eaa1f8, #a844a8);
+  background: linear-gradient(175deg, #ee73da, #a05adc);
   margin: auto;
 }
 .button_commander:hover {
-  background: linear-gradient(175deg, rgba(234, 161, 248, 0.8), rgba(168, 68, 168, 0.8));
+  background: linear-gradient(175deg, rgba(238, 115, 218, 0.8), rgba(160, 90, 220, 0.8));
 }
 
 .img_top {
