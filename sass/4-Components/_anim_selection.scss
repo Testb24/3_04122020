@@ -1,5 +1,5 @@
 .choix_box {
-  width: calc(100% - 20px);
+  width: calc(100% - 0px);
   height: 65px;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   overflow: hidden;
   border-radius: 20px;
   background-color: white;
-  margin: 10px 10px;
+  margin-bottom: 10px;
 }
 .choix_txt {
   width: calc(100% - 20px);

@@ -1,5 +1,11 @@
-@import "./2-Utils/variable";
+@import "./1-Base/_base";
+
+@import "./2-Utils/_variable";
+
+@import "./3-Layout/_container";
 
 @import "./4-Components/_anim_ouverture";
 @import "./4-Components/_anim_selection";
-
+@import "./4-Components/_button";
+@import "./4-Components/_img_top";
+@import "./4-Components/_img_footer";
