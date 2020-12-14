@@ -1,10 +1,3 @@
-:root {
-  --transition_time: 600ms;
-  --color_validation:  rgb(153, 209, 202);
-  --transition_time_return: 1200ms;
-  --transition_delay_return: 00ms;
-}
-
 .container_main > :nth-child(1) {
   animation: box 1s 200ms both; 
 }
