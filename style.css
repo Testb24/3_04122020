@@ -5,9 +5,41 @@ body {
   font-family: arial;
 }
 
+h1 {
+  font-size: calc(14px + 0.8vw);
+}
+
+h2 {
+  font-size: calc(12px + 0.6vw);
+}
+
+h1 {
+  font-size: calc(24px + 0.8vw);
+}
+
+h2 {
+  font-size: calc(18px + 0.6vw);
+}
+
+h3 {
+  font-size: calc(14.04px + 0.5vw);
+}
+
+h4 {
+  font-size: calc(12px + 0.4vw);
+}
+
+h5 {
+  font-size: calc(9.96px + 0.35vw);
+}
+
+h6 {
+  font-size: calc(8.04px + 0.25vw);
+}
+
 :root {
   --transition_time: 600ms;
-  --color_validation: rgb(153, 209, 202);
+  --color_validation: rgb(153, 226, 208);
   --transition_time_return: 1200ms;
   --transition_delay_return: 00ms;
 }
@@ -37,10 +69,21 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.container_main h3 {
-  position: relative;
+.container_main h1 {
   padding: 0;
-  margin-bottom: 0px;
+  margin: 0;
+}
+.container_main h2 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.container_main h3 {
+  padding: 0;
+  margin: 0;
+}
+.container_main p {
+  padding: 0;
+  margin: 0;
 }
 .container_main .little_square {
   width: 50px;
@@ -212,7 +255,7 @@ body {
 }
 .choix_box {
   width: calc(100% - 0px);
-  height: 65px;
+  height: 60px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -278,24 +321,6 @@ body {
 .choix_box:hover .fa-check-circle {
   transform: rotate(1turn);
   transition: transform var(--transition_time);
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2 {
-  padding: 0px 0;
-  margin: 0;
-}
-
-h1 {
-  font-size: calc(18px + 0.8vw);
-}
-
-h2 {
-  font-size: calc(14px + 0.6vw);
 }
 
 .button_nav {

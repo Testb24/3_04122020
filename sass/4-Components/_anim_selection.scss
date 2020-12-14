@@ -1,6 +1,6 @@
 .choix_box {
   width: calc(100% - 0px);
-  height: 65px;
+  height: 60px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -57,19 +57,4 @@
 .choix_box:hover .fa-check-circle{
   transform: rotate(1turn);
   transition: transform var(--transition_time);
-}
-
-
-body {
-  margin: 0;
-  padding: 0;
-}
-h1, h2 {
-  padding: 0px 0;
-  margin: 0;
-}h1 {
-font-size: calc(18px + 0.8vw);  
-}
-h2 {
-font-size: calc(14px + 0.6vw);  
 }

@@ -24,10 +24,24 @@
         align-items: center;
     }
 
-    & h3 {
-        position: relative;
+    & h1 {
         padding: 0;
-        margin-bottom: 0px;
+        margin: 0;
+    }
+
+    & h2 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    & h3 {
+        padding: 0;
+        margin: 0;
+    }
+
+    & p {
+        padding: 0;
+        margin: 0;
     }
 
     & .little_square {
