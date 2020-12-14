@@ -7,7 +7,6 @@
     margin-bottom: 20px;
 }
 
-
 .button_commander {
     width: 200px;
     height: 40px;
@@ -18,7 +17,6 @@
     background: linear-gradient(175deg, 
                                 rgb(238, 115, 218), 
                                 rgb(160, 90, 220));
-  box-shadow: 1px 2px 10px rgb(197, 197, 197);
     margin: auto;
     &:hover{
         background: linear-gradient(175deg, 
@@ -26,4 +24,3 @@
                                     rgb(160, 90, 220, 0.8));
     }
   }
-

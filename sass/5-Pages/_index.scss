@@ -1,0 +1,56 @@
+.logo_top {
+    padding: 20px 0px;
+    background-color: white;
+}
+
+.lieu {
+    width: calc(100% - 40px);
+    height: auto;
+    background-color: rgba(234, 234, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: -1;
+
+    & > i, p {
+        padding: 0px 10px;
+    }
+}
+
+.container_main_index {
+    width: 100%;
+    height: auto;
+
+    & .part1 {
+        width: calc(100% - 50px);
+        background-color:  rgb(246, 246, 246);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 25px;
+        text-align: center;
+
+        & p {
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+
+    & .part2 {
+        background-color:  white;
+        width: calc(100% - 30px);        
+        padding: 0px 15px 0px 15px;
+
+    }
+
+    & .part3 {
+        background-color:  rgb(246, 246, 246);
+        width: calc(100% - 30px);        
+        padding: 0px 15px 0px 15px;
+
+    }
+
+}

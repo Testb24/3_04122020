@@ -5,6 +5,14 @@ body {
   font-family: arial;
 }
 
+.white {
+  background-color: white;
+}
+
+.shadow {
+  box-shadow: 1px 2px 10px #c5c5c5;
+}
+
 h1 {
   font-size: calc(14px + 0.8vw);
 }
@@ -267,7 +275,6 @@ h6 {
   border-radius: 20px;
   background-color: white;
   margin-bottom: 10px;
-  box-shadow: 1px 2px 10px #c5c5c5;
 }
 
 .choix_txt {
@@ -364,7 +371,6 @@ h6 {
   border-radius: 25px;
   box-shadow: 1px 2px 10px #c5c5c5;
   background: linear-gradient(175deg, #ee73da, #a05adc);
-  box-shadow: 1px 2px 10px #c5c5c5;
   margin: auto;
 }
 .button_commander:hover {
@@ -384,6 +390,111 @@ h6 {
 
 .icone_footer {
   width: 5%;
+}
+
+.container_restau {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin: 10px 0px;
+  border-radius: 11px;
+}
+
+.carte_restau_img {
+  width: 100%;
+  height: calc(100% - 50px);
+  object-fit: cover;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+.class_restau_bottom {
+  width: calc(100% - 20px);
+  height: 100%;
+  padding: 0px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carte_restau_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.carte_restau_txt h3 {
+  padding: 0;
+  margin: 0;
+}
+.carte_restau_txt p {
+  padding: 0;
+  margin: 0;
+}
+
+.block {
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+
+.black {
+  color: var(--color4);
+  background-color: white;
+}
+
+.lien {
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.logo_top {
+  padding: 20px 0px;
+  background-color: white;
+}
+
+.lieu {
+  width: calc(100% - 40px);
+  height: auto;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  z-index: -1;
+}
+.lieu > i, .lieu p {
+  padding: 0px 10px;
+}
+
+.container_main_index {
+  width: 100%;
+  height: auto;
+}
+.container_main_index .part1 {
+  width: calc(100% - 50px);
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 25px;
+  text-align: center;
+}
+.container_main_index .part1 p {
+  padding: 0px;
+  margin: 0px;
+}
+.container_main_index .part2 {
+  background-color: white;
+  width: calc(100% - 30px);
+  padding: 0px 15px 0px 15px;
+}
+.container_main_index .part3 {
+  background-color: #f6f6f6;
+  width: calc(100% - 30px);
+  padding: 0px 15px 0px 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
