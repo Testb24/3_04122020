@@ -267,6 +267,7 @@ h6 {
   border-radius: 20px;
   background-color: white;
   margin-bottom: 10px;
+  box-shadow: 1px 2px 10px #c5c5c5;
 }
 
 .choix_txt {
@@ -318,7 +319,7 @@ h6 {
 }
 
 .choix_box:hover .choix_validation {
-  width: 15%;
+  width: 16%;
   transition: width var(--transition_time);
 }
 
@@ -361,7 +362,9 @@ h6 {
   color: white;
   border: none;
   border-radius: 25px;
+  box-shadow: 1px 2px 10px #c5c5c5;
   background: linear-gradient(175deg, #ee73da, #a05adc);
+  box-shadow: 1px 2px 10px #c5c5c5;
   margin: auto;
 }
 .button_commander:hover {

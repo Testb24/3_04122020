@@ -8,6 +8,7 @@
   border-radius: 20px;
   background-color: white;
   margin-bottom: 10px;
+  box-shadow: 1px 2px 10px rgb(197, 197, 197);
 }
 .choix_txt {
   width: calc(100% - 20px);
@@ -51,7 +52,7 @@
   transition: width var(--transition_time);
 }
 .choix_box:hover .choix_validation{
-  width: 15%;
+  width: 16%;
   transition: width var(--transition_time);
 }
 .choix_box:hover .fa-check-circle{
