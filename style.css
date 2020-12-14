@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #ebebeb;
 }
 
 :root {
@@ -45,13 +46,93 @@ body {
 .container_footer {
   width: calc(100% - 40px);
   height: auto;
-  background-color: black;
+  background-color: #363636;
   color: white;
   padding: 20px;
 }
 .container_footer p {
   margin: 4px;
   padding: 0px;
+}
+
+.container_main > :nth-child(1) {
+  animation: box 1s 200ms both;
+}
+
+.container_main > :nth-child(2) {
+  animation: box 1s 400ms both;
+}
+
+.container_main > :nth-child(3) {
+  animation: box 1s 600ms both;
+}
+
+.container_main > :nth-child(4) {
+  animation: box 1s 800ms both;
+}
+
+.container_main > :nth-child(5) {
+  animation: box 1s 1000ms both;
+}
+
+.container_main > :nth-child(6) {
+  animation: box 1s 1200ms both;
+}
+
+.container_main > :nth-child(7) {
+  animation: box 1s 1400ms both;
+}
+
+.container_main > :nth-child(8) {
+  animation: box 1s 1600ms both;
+}
+
+.container_main > :nth-child(9) {
+  animation: box 1s 1800ms both;
+}
+
+.container_main > :nth-child(10) {
+  animation: box 1s 2000ms both;
+}
+
+.container_main > :nth-child(11) {
+  animation: box 1s 2200ms both;
+}
+
+.container_main > :nth-child(12) {
+  animation: box 1s 2400ms both;
+}
+
+.container_main > :nth-child(13) {
+  animation: box 1s 2600ms both;
+}
+
+.container_main > :nth-child(14) {
+  animation: box 1s 2800ms both;
+}
+
+.container_main > :nth-child(15) {
+  animation: box 1s 3000ms both;
+}
+
+.container_main > :nth-child(16) {
+  animation: box 1s 3200ms both;
+}
+
+.container_main > :nth-child(17) {
+  animation: box 1s 3400ms both;
+}
+
+.container_main > :nth-child(18) {
+  animation: box 1s 3600ms both;
+}
+
+.container_main > :nth-child(19) {
+  animation: box 1s 3800ms both;
+}
+
+.container_main > :nth-child(20) {
+  animation: box 1s 4000ms both;
 }
 
 .container_main > :nth-child(1) {
@@ -227,6 +308,28 @@ h2 {
   display: flex;
   justify-items: center;
   margin: auto;
+}
+
+.button_commander_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button_commander {
+  width: 200px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(175deg, #eaa1f8, #a844a8);
+  margin: auto;
+}
+.button_commander:hover {
+  background: linear-gradient(175deg, rgba(234, 161, 248, 0.8), rgba(168, 68, 168, 0.8));
 }
 
 .img_top {

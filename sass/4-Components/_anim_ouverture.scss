@@ -1,3 +1,9 @@
+@for $i from 1 through 20 {
+  .container_main > :nth-child( #{$i}){
+    animation: box 1s 200ms*$i both; 
+  }
+}
+
 .container_main > :nth-child(1) {
   animation: box 1s 200ms both; 
 }

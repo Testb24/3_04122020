@@ -1,0 +1,27 @@
+.button_commander_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.button_commander {
+    width: 200px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(175deg, 
+                                rgb(234, 161, 248), 
+                                rgb(168, 68, 168));
+    margin: auto;
+    &:hover{
+        background: linear-gradient(175deg, 
+                                    rgba(234, 161, 248, 0.8),
+                                    rgb(168, 68, 168, 0.8));
+    }
+  }
+
