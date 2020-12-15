@@ -45,6 +45,11 @@ h6 {
   font-size: calc(8.04px + 0.25vw);
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 :root {
   --transition_time: 600ms;
   --color_validation: rgb(153, 226, 208);
@@ -448,6 +453,40 @@ h6 {
   text-decoration: none;
 }
 
+.heart_icone_container {
+  width: 15px;
+  height: 15px;
+  position: relative;
+}
+
+.far {
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fa {
+  visibility: hidden;
+}
+
+.heart_icone_container:hover .fa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: visible;
+}
+
+.heart_icone_container:hover .far {
+  visibility: hidden;
+}
+
+.fa-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ee73da), to(#a05adc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .logo_top {
   padding: 20px 0px;
   background-color: white;
@@ -479,7 +518,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 25px;
+  padding: 15px 25px 20px 25px;
   text-align: center;
 }
 .container_main_index .part1 p {
@@ -489,7 +528,45 @@ h6 {
 .container_main_index .part2 {
   background-color: white;
   width: calc(100% - 30px);
-  padding: 0px 15px 0px 15px;
+  padding: 20px 15px 20px 15px;
+}
+.container_main_index .part2 .container_fonctionnement {
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  width: calc(100% - 40px);
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px;
+  padding: 0;
+}
+.container_main_index .part2 .circle {
+  width: 22px;
+  height: 22px;
+  background-color: #9356dc;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.container_main_index .part2 .container_fonctionnement > i {
+  padding: 0px 15px;
+}
+.container_main_index .part2 .container_fonctionnement > * {
+  position: relative;
+  left: -12px;
+}
+.container_main_index .part2 .container_fonctionnement:hover {
+  background-color: #f5edff;
+}
+.container_main_index .part2 .container_fonctionnement > .fas {
+  color: grey;
+}
+.container_main_index .part2 .container_fonctionnement:hover > .fas {
+  color: #9356dc;
 }
 .container_main_index .part3 {
   background-color: #f6f6f6;

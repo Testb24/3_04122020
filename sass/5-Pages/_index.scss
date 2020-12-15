@@ -30,7 +30,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0px 25px;
+        padding: 15px 25px 20px 25px;
         text-align: center;
 
         & p {
@@ -42,8 +42,50 @@
     & .part2 {
         background-color:  white;
         width: calc(100% - 30px);        
-        padding: 0px 15px 0px 15px;
+        padding: 20px 15px 20px 15px;
 
+        & .container_fonctionnement {
+            background-color:  rgb(246, 246, 246);
+            border-radius: 15px;
+            width: calc(100% - 40px);
+            height: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 20px;
+            padding: 0;
+          }
+          .circle {
+            width: 22px;
+            height: 22px;
+            background-color: rgb(147, 86, 220);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+          }
+          .container_fonctionnement > i {
+            padding: 0px 15px;
+          }
+          .container_fonctionnement > * {
+            position: relative;
+            left: -12px;
+          }
+
+          .container_fonctionnement:hover {
+            background-color: rgb(245, 237, 255);
+          }
+
+          .container_fonctionnement > .fas {
+              color: grey;
+          }
+
+          .container_fonctionnement:hover > .fas {
+            color: rgb(147, 86, 220);
+          }
+        
     }
 
     & .part3 {
@@ -54,3 +96,4 @@
     }
 
 }
+

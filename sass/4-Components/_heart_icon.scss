@@ -1,0 +1,28 @@
+.heart_icone_container {
+    width: 15px;
+    height: 15px;
+    position: relative;
+  }
+  .far {
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0; 
+  }
+  .fa {
+      visibility: hidden;
+  }
+  .heart_icone_container:hover .fa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: visible;
+  }
+  .heart_icone_container:hover .far {
+    visibility: hidden;
+  }
+  .fa-gradient {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(238, 115, 218)), to(rgb(160, 90, 220)));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
