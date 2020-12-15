@@ -567,6 +567,8 @@ a {
   background-color: white;
   width: calc(100% - 30px);
   padding: 20px 15px 20px 15px;
+  display: flex;
+  flex-direction: column;
 }
 .container_main_index .part2 .container_fonctionnement {
   background-color: #f6f6f6;
