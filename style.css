@@ -62,13 +62,13 @@ a {
 .container_header {
   width: 100%;
   height: auto;
-  display: initial;
+  display: inline-block;
 }
 
 .container_main {
   background-color: #f6f6f6;
   width: calc(100% - 30px);
-  max-width: 300px;
+  max-width: 500px;
   margin: auto;
   height: auto;
   display: flex;
@@ -82,7 +82,7 @@ a {
   top: -40px;
 }
 .container_main .titre {
-  width: 910%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,6 +118,8 @@ a {
 @media (min-width: 550px) {
   .container_main {
     background-color: rgba(246, 246, 246, 0.8);
+    position: relative;
+    top: 0px;
   }
 }
 .container_footer {
@@ -212,62 +214,6 @@ a {
   animation: box 1s 4000ms both;
 }
 
-.container_main > :nth-child(1) {
-  animation: box 1s 200ms both;
-}
-
-.container_main > :nth-child(2) {
-  animation: box 1s 400ms both;
-}
-
-.container_main > :nth-child(3) {
-  animation: box 1s 600ms both;
-}
-
-.container_main > :nth-child(4) {
-  animation: box 1s 800ms both;
-}
-
-.container_main > :nth-child(5) {
-  animation: box 1s 1000ms both;
-}
-
-.container_main > :nth-child(6) {
-  animation: box 1s 1200ms both;
-}
-
-.container_main > :nth-child(7) {
-  animation: box 1s 1400ms both;
-}
-
-.container_main > :nth-child(8) {
-  animation: box 1s 1600ms both;
-}
-
-.container_main > :nth-child(9) {
-  animation: box 1s 1800ms both;
-}
-
-.container_main > :nth-child(10) {
-  animation: box 1s 2000ms both;
-}
-
-.container_main > :nth-child(11) {
-  animation: box 1s 2200ms both;
-}
-
-.container_main > :nth-child(12) {
-  animation: box 1s 2400ms both;
-}
-
-.container_main > :nth-child(13) {
-  animation: box 1s 2600ms both;
-}
-
-.container_main > :nth-child(14) {
-  animation: box 1s 2800ms both;
-}
-
 @keyframes box {
   0% {
     opacity: 0;
@@ -351,7 +297,7 @@ a {
 }
 
 .button_nav {
-  width: calc(100% - 0px);
+  width: calc(100% - 40px);
   height: auto;
   display: flex;
   align-items: center;

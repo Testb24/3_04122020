@@ -4,49 +4,6 @@
   }
 }
 
-.container_main > :nth-child(1) {
-  animation: box 1s 200ms both; 
-}
-.container_main > :nth-child(2) {
-  animation: box 1s 400ms both; 
-}
-.container_main > :nth-child(3) {
-  animation: box 1s 600ms both; 
-}
-.container_main > :nth-child(4) {  
-  animation: box 1s 800ms both; 
-}
-.container_main > :nth-child(5) {
-  animation: box 1s 1000ms both; 
-}
-.container_main > :nth-child(6) {
-  animation: box 1s 1200ms both; 
-}
-.container_main > :nth-child(7) {
-  animation: box 1s 1400ms both; 
-}
-.container_main > :nth-child(8) {  
-  animation: box 1s 1600ms both; 
-}
-.container_main > :nth-child(9) {
-  animation: box 1s 1800ms both; 
-}
-.container_main > :nth-child(10) {
-  animation: box 1s 2000ms both; 
-}
-.container_main > :nth-child(11) {
-  animation: box 1s 2200ms both; 
-}
-.container_main > :nth-child(12) {  
-  animation: box 1s 2400ms both; 
-}
-.container_main > :nth-child(13) {  
-  animation: box 1s 2600ms both; 
-}
-.container_main > :nth-child(14) {  
-  animation: box 1s 2800ms both; 
-}
-
 @keyframes box {
   0% {
     opacity: 0;
