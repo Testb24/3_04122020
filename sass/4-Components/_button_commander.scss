@@ -19,6 +19,7 @@
                                 rgb(160, 90, 220));
     margin: auto;
     &:hover{
+        box-shadow: 3px 4px 15px 3px rgb(197, 197, 197);
         background: linear-gradient(175deg, 
                                     rgba(238, 115, 218, 0.8),
                                     rgb(160, 90, 220, 0.8));

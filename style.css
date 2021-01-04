@@ -381,6 +381,7 @@ a {
   margin: auto;
 }
 .button_commander:hover {
+  box-shadow: 3px 4px 15px 3px #c5c5c5;
   background: linear-gradient(175deg, rgba(238, 115, 218, 0.8), rgba(160, 90, 220, 0.8));
 }
 
