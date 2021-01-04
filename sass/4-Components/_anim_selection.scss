@@ -58,3 +58,13 @@
   transform: rotate(1turn);
   transition: transform var(--transition_time);
 }
+
+
+@media (min-width: 870px) {
+
+  .choix_box {
+    width: calc(100% - 0px);
+    height: calc(60px + 0.3vw);
+
+}
+}

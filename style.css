@@ -68,7 +68,7 @@ a {
 .container_main {
   background-color: #f6f6f6;
   width: calc(100% - 30px);
-  max-width: 500px;
+  max-width: 700px;
   margin: auto;
   height: auto;
   display: flex;
@@ -120,6 +120,8 @@ a {
     background-color: rgba(246, 246, 246, 0.8);
     position: relative;
     top: 0px;
+    width: calc(70% - 30px);
+    min-width: 450px;
   }
 }
 .container_footer {
@@ -333,6 +335,12 @@ a {
   transition: transform var(--transition_time);
 }
 
+@media (min-width: 870px) {
+  .choix_box {
+    width: calc(100% - 0px);
+    height: calc(60px + 0.3vw);
+  }
+}
 .button_nav {
   width: calc(100% - 40px);
   height: auto;
@@ -379,16 +387,10 @@ a {
 .img_top {
   width: 100%;
   height: auto;
+  max-height: 300px;
   object-fit: cover;
 }
 
-@media (min-width: 550px) {
-  .img_top {
-    position: sticky;
-    top: 0;
-    z-index: -1;
-  }
-}
 .logo_footer {
   filter: invert(100%);
   width: 45%;

@@ -9,7 +9,7 @@
 .container_main {
     background-color:  rgb(246, 246, 246);
     width: calc(100% - 30px);
-    max-width: 500px;
+    max-width: 700px;
     margin: auto;
     height: auto;
     display: flex;
@@ -70,7 +70,10 @@
     .container_main{
         background-color:  rgba(246, 246, 246, 0.8);
         position: relative;
-        top: 0px;
+        top: 0px;        
+        width: calc(70% - 30px);
+        min-width: 450px;
+        
     }
     }
 
