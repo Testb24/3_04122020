@@ -185,7 +185,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  animation: loader 2.7s both;
+  animation: loader 2.6s both;
   background-color: white;
 }
 
@@ -345,20 +345,15 @@ a {
   }
 }
 @keyframes loader {
-  85% {
+  95% {
     opacity: 1;
     width: 100%;
     height: 100vh;
   }
-  90% {
+  99% {
     opacity: 0;
     width: 100%;
     height: 100vh;
-  }
-  95% {
-    opacity: 0;
-    width: 0px;
-    height: 0px;
   }
   100% {
     opacity: 0;
