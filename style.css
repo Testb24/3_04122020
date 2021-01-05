@@ -204,6 +204,11 @@ a {
   --color3B: rgb(210, 140, 255);
 }
 
+@media (max-width: 550px) {
+  :root {
+    --width_object: 60px;
+  }
+}
 .loader_box1 {
   width: var(--width_object);
   height: var(--width_object);
