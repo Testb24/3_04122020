@@ -1,0 +1,207 @@
+
+.after_loader {
+    animation: mainpart 3s both;
+}
+
+.loader_box {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    flex-wrap: wrap;
+    animation: loader 2.7s both;
+    background-color: white;
+
+}
+:root {
+  --width_object: 100px;
+  --width_space: calc(var(--width_object) / 2);
+  --width_translation_anim: calc((var(--width_object) / 2) * 1.2);
+  --time_animation: 2.4s;
+  --color1 :  rgb(238, 114, 217);
+  --color1B :  rgb(255, 164, 255);
+  --color2 : rgb(160, 90, 220);
+  --color2B : rgb(210, 140, 255);
+  --color3 :  rgb(153, 226, 208);
+  --color3B :  rgb(203, 255, 255);
+    --color3 : rgb(160, 90, 220);
+  --color3B : rgb(210, 140, 255);
+  
+}
+.loader_box1 {
+    width: var(--width_object);
+    height: var(--width_object);
+    overflow: hidden;
+}
+.loader_box2 {
+    width: var(--width_space);
+    height: 25px;
+}
+
+.loader_purple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader_purple > .loader_plate {
+  width: var(--width_object);
+  height: var(--width_object);
+  background-color: black;
+  border-radius: 50px;
+  animation: couleurassiette var(--time_animation) 00ms both infinite;
+}
+.loader_green > i {
+  position: relative;
+  left: 55px;
+  animation: couleurcouvertgauche var(--time_animation) 00ms both infinite;
+}
+.loader_orange > i {
+  position: relative;
+  left: -50px;
+  animation: couleurcouvertdroit var(--time_animation) 00ms both infinite;
+}
+.loader_icon {
+  font-size: var(--width_object);
+  
+}
+
+.loader_box > :nth-child(1){
+  animation: translationcouvertgauche var(--time_animation) 00ms both infinite; 
+}
+
+.loader_box > :nth-child(3){
+  animation: translationassiette var(--time_animation) 0s both infinite; 
+}
+
+.loader_box > :nth-child(5){
+  animation: translationcouvertdroit var(--time_animation) 0s both infinite; 
+}
+  
+@keyframes translationcouvertgauche {
+    19% {
+        transform: translateX(var(--width_translation_anim));
+    }
+    72% {
+        transform: translateX(var(--width_translation_anim));
+    }
+}
+@keyframes couleurcouvertgauche {
+      0% {
+        color: var(--color2);
+    }
+    19% {
+        color: var(--color2);
+    }
+      71% {
+        color: var(--color2);
+    }
+    72% {
+        color: var(--color2B);
+    }
+      100% {
+        color: var(--color2);
+    }
+}
+@keyframes translationassiette {
+    11% {
+        transform: translateX(0px);
+    }
+    31% {
+        transform: translateX(var(--width_translation_anim));
+    }
+    60% {
+        transform: translateX(var(--width_translation_anim));
+    }
+    81% {
+        transform: translateX(00px);
+    }
+}
+@keyframes couleurassiette {
+      0% {
+        background-color: var(--color1);
+    }
+    10% {
+        background-color: var(--color1);
+    }
+    11% {
+        background-color: var(--color1B);
+    }
+    59% {
+        background-color: var(--color1);
+    }
+    60% {
+        background-color: var(--color1B);
+    }
+      100% {
+        background-color: var(--color1);
+    }
+  
+  
+} 
+
+@keyframes translationcouvertdroit {
+    22% {
+        transform: translateX(0px);
+    }
+    23% {
+        transform: translateX(0px);        
+    }
+    50% {
+        transform: translateX(var(--width_translation_anim));
+    }
+    69% {
+        transform: translateX(0px);
+    }
+}
+@keyframes couleurcouvertdroit {
+      0% {
+        color: var(--color3);
+    }
+    22% {
+        color: var(--color3);
+    }
+    23% {
+        color: var(--color3B);
+    }
+      100% {
+        color: var(--color3);
+    }
+}
+
+
+@keyframes loader {
+    85% {
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+    }
+    90% {
+        opacity: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    95% {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+    100% {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@keyframes mainpart {    
+    0% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
