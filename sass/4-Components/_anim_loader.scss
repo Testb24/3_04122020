@@ -11,8 +11,8 @@
   justify-content: center;
   align-items: center;
     flex-wrap: wrap;
-    animation: loader 2.6s both;
-    background-color: white;
+    animation: loader 222.6s both;
+    background-color: #f6f6f6;
 
 }
 :root {
@@ -28,11 +28,6 @@
   --color3B :  rgb(203, 255, 255);
     --color3 : rgb(160, 90, 220);
   --color3B : rgb(210, 140, 255);  
-}
-@media (max-width: 550px){
-    :root {
-        --width_object: 60px;
-    }
 }
 
 .loader_box1 {
@@ -57,14 +52,20 @@
   border-radius: 50px;
   animation: couleurassiette var(--time_animation) 00ms both infinite;
 }
+.loader_green {
+    width: calc(var(--width_object) / 2);
+}
 .loader_green > i {
   position: relative;
-  left: 55px;
+  left: 6px;
   animation: couleurcouvertgauche var(--time_animation) 00ms both infinite;
+}
+.loader_orange {
+    width: calc(var(--width_object) / 2);
 }
 .loader_orange > i {
   position: relative;
-  left: -50px;
+  left: -48px;
   animation: couleurcouvertdroit var(--time_animation) 00ms both infinite;
 }
 .loader_icon {
@@ -204,4 +205,25 @@
     100% {
         opacity: 1;
     }
+}
+
+
+@media (max-width: 550px){
+    :root {
+        --width_object: 80px;
+        --width_space: calc(var(--width_object) / 2);
+        --width_translation_anim: calc((var(--width_object) / 2) * 1.2);
+    }
+
+    .loader_green > i {
+        left: 5px;
+      }
+      .loader_orange > i {
+        left: -40px;
+      }
+
+      .loader_box {
+          position: relative;
+          left: -28px;
+      }
 }
