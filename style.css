@@ -240,7 +240,7 @@ a {
 }
 
 .loader_orange {
-  width: calc(var( --width_object) / 2 );
+  width: calc(var(--width_object) / 2);
 }
 
 .loader_orange > i {
