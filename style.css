@@ -403,6 +403,8 @@ a {
 @media (max-width: 550px) {
   :root {
     --width_object: 80px;
+    --width_space: calc(var(--width_object) / 2);
+    --width_translation_anim: calc((var(--width_object) / 2) * 1.2);
   }
 
   .loader_green > i {
@@ -936,6 +938,9 @@ a {
   .collection2 {
     width: 100%;
   }
+}
+.container_main_index h1 {
+  font-size: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
