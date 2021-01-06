@@ -240,7 +240,7 @@ a {
 }
 
 .loader_orange {
-  width: calc(var(--width_object) / 2);
+  width: calc(var( --width_object) / 2 );
 }
 
 .loader_orange > i {
@@ -383,8 +383,8 @@ a {
 @media (max-width: 550px) {
   :root {
     --width_object: 80px;
-    --width_space: calc(var(--width_object)/2);
-    --width_translation_anim: calc((var(--width_object)/2)*1.2);
+    --width_space: calc(var(--width_object) / 2);
+    --width_translation_anim: calc((var(--width_object) / 2) * 1.2);
   }
 
   .loader_green > i {
