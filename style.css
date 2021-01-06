@@ -135,6 +135,16 @@ a {
   margin: 4px;
   padding: 0px;
 }
+.container_footer a {
+  margin: 4px;
+  padding: 0px;
+  color: white;
+}
+
+.liste_menu {
+  display: flex;
+  flex-direction: column;
+}
 
 @media (min-width: 550px) {
   .container_footer {

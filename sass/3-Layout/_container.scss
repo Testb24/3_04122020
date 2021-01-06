@@ -88,6 +88,17 @@
         margin: 4px;
         padding: 0px;
     }
+
+    & a {
+        margin: 4px;
+        padding: 0px;
+        color: white;
+    }
+}
+
+.liste_menu {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 550px){
