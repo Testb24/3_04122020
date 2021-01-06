@@ -161,6 +161,16 @@ a {
     width: calc(70% - 20px);
     padding: 10px;
   }
+
+  .icone_footer {
+    position: relative;
+    left: -5px;
+  }
+
+  .fa-hands-helping {
+    position: relative;
+    left: -10px;
+  }
 }
 @media (min-width: 870px) {
   .container_footer {
@@ -703,6 +713,16 @@ a {
   object-fit: cover;
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
+}
+
+.carte_modele_3_nouveau {
+  width: auto;
+  height: auto;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  padding: 10px;
 }
 
 @media (min-width: 550px) {

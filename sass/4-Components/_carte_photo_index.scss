@@ -58,6 +58,16 @@ border-top-left-radius: 11px;
 border-top-right-radius: 11px;
 }
 
+.carte_modele_3_nouveau {
+    width: auto;
+    height: auto;
+    background-color: rgba(153, 226, 208, 1);
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    padding: 10px;
+}
+
 @media (min-width:550px) {        
     .collection3 {
         width:100%;
