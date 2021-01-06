@@ -816,6 +816,8 @@ a {
 .container_main_index {
   width: 100%;
   height: auto;
+  max-width: 1500px;
+  margin: auto;
 }
 
 .part1 {

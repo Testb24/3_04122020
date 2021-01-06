@@ -21,7 +21,11 @@
 
 .container_main_index {
     width: 100%;
-    height: auto;}
+    height: auto;
+    max-width: 1500px;
+    margin: auto;
+  }
+
 
 .part1 {
     width: calc(100% - 50px);
@@ -160,3 +164,4 @@
   font-size: 0px;
 }
 }
+
